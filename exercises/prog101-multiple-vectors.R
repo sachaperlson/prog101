@@ -15,8 +15,7 @@ instrument_durations <- instrument_recovered - instrument_deployed
 
 # Which site had the longest duration? Use conditional indexing.
 site <- c("Santa Cruz", "Santa Rosa", "San Miguel")
-
-max(site)
+site [instrument_durations == max(instrument_durations)]
 
 #Santa Rosa
 

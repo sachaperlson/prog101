@@ -11,13 +11,15 @@ cylinder_volume <- pi * radius^2 * height
 # What are the errors in these expressions?
 speed_m_s <- distance_m * time_s
 #In order to calculate speed distance should be divided by time
+speed_m_s <- distance_m / time_s
 
 acceleration_m_s2 <- speed_m_s / time_s
-#add underscores
+#added underscores
 
 force_N <- mass + acceleration_m_s2
 #add dash
 #mass * acceleration
+force_N <- mass * acceleration_m_s2
 
 # The energy density of market squid is 4850 joules per gram[1]. If a 225 kg
 # Risso's dolphin needs 5 million joules of energy per day[2] and a typical
@@ -29,9 +31,11 @@ force_N <- mass + acceleration_m_s2
 density_squidenergy <- 4850
 weight_squid <- 35
 energy_squid <- 169750
-4850 * 35
-5000000/169750
-#30 squid
+density_squidenergy* weight_squid
+dophin_energy <- 5000000
+n_squid <- dophin_energy / (density_squidenergy * weight_squid)
+
+#about 29.455 squid
 
 
 # [1] Price et al. 2024 https://doi.org/10.3389/fmars.2023.1345525
